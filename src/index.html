@@ -1,81 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Call us for a quick pocket!" />
-    <title>EGirls R Us</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%239013fe%22></rect><path fill=%22%23fff%22 d=%22M36.95 77.36L36.95 77.36Q34.61 77.36 33.17 75.92Q31.73 74.48 31.73 72.14L31.73 72.14L31.73 27.77Q31.73 25.43 33.17 24.03Q34.61 22.64 36.95 22.64L36.95 22.64L66.74 22.64Q67.19 23.18 67.50 24.17Q67.82 25.16 67.82 26.33L67.82 26.33Q67.82 28.31 66.88 29.39Q65.93 30.47 64.31 30.47L64.31 30.47L41.27 30.47L41.27 45.41L64.04 45.41Q64.49 45.95 64.81 46.94Q65.12 47.93 65.12 49.10L65.12 49.10Q65.12 51.17 64.17 52.16Q63.23 53.15 61.61 53.15L61.61 53.15L41.27 53.15L41.27 69.53L67.19 69.53Q67.55 70.07 67.91 71.06Q68.27 72.05 68.27 73.22L68.27 73.22Q68.27 75.29 67.33 76.33Q66.38 77.36 64.76 77.36L64.76 77.36L36.95 77.36Z%22></path></svg>"
-    />
-    <style>
-      html,
-      body,
-      main {
-        height: 100%;
-      }
 
-      body {
-        background-color: #171717;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Call us for a quick pocket!">
+  <title>EGirls R Us</title>
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%239013fe%22></rect><path fill=%22%23fff%22 d=%22M36.95 77.36L36.95 77.36Q34.61 77.36 33.17 75.92Q31.73 74.48 31.73 72.14L31.73 72.14L31.73 27.77Q31.73 25.43 33.17 24.03Q34.61 22.64 36.95 22.64L36.95 22.64L66.74 22.64Q67.19 23.18 67.50 24.17Q67.82 25.16 67.82 26.33L67.82 26.33Q67.82 28.31 66.88 29.39Q65.93 30.47 64.31 30.47L64.31 30.47L41.27 30.47L41.27 45.41L64.04 45.41Q64.49 45.95 64.81 46.94Q65.12 47.93 65.12 49.10L65.12 49.10Q65.12 51.17 64.17 52.16Q63.23 53.15 61.61 53.15L61.61 53.15L41.27 53.15L41.27 69.53L67.19 69.53Q67.55 70.07 67.91 71.06Q68.27 72.05 68.27 73.22L68.27 73.22Q68.27 75.29 67.33 76.33Q66.38 77.36 64.76 77.36L64.76 77.36L36.95 77.36Z%22></path></svg>">
+  <style>
+    html,
+    body,
+    main {
+      height: 100%;
+    }
 
-      h1 {
-        color: #f5f5f5;
-      }
+    body {
+      background-color: #171717;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    }
 
-      .flex {
-        /* Make this a flexbox container that vertically centers the content */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* Show as 1280x720 at most (720p) */
-        max-width: 1280px;
-        /* Horizontally center the flexbox container */
-        margin: 0 auto;
-        /* Make it use the whole screen height so that vertical centering works */
-        height: 100%;
-      }
+    h1 {
+      color: #f5f5f5;
+    }
 
-      /* The next two classes allow the iframe to grow with the screen size */
-      .iframe-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-      }
+    .flex {
+      /* Make this a flexbox container that vertically centers the content */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* Show as 1280x720 at most (720p) */
+      max-width: 1280px;
+      /* Horizontally center the flexbox container */
+      margin: 0 auto;
+      /* Make it use the whole screen height so that vertical centering works */
+      height: 100%;
+    }
 
-      .responsive-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
+    /* The next two classes allow the iframe to grow with the screen size */
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+      /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
 
-  <body>
-    <main>
-      <div class="flex">
-        <h1>EGirlsRUs.com</h1>
-        <div class="iframe-container">
-          <iframe
-            class="responsive-iframe"
-            src="https://clips.twitch.tv/embed?clip=PlausibleStrangeCatRickroll&parent=egirlsrus.com"
-            frameborder="0"
-            allowfullscreen="true"
-            scrolling="no"
-          ></iframe>
-        </div>
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="flex">
+      <h1>EGirlsRUs.com</h1>
+      <div class="iframe-container">
+        <iframe class="responsive-iframe"
+                src="https://clips.twitch.tv/embed?clip=PlausibleStrangeCatRickroll&parent=egirlsrus.com"
+                frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>
